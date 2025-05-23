@@ -1,5 +1,5 @@
-const arr = [0,-1,2,-3,1];
-const target = -2;
+const arr = [1,-2,1,0,5];
+const target = 0;
 
 
 function equalsum(arr, target){
