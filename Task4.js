@@ -12,7 +12,7 @@ function createTimer(seconds) {
     }, i*1000);
     
 }
-  // return result;
+
 }
 
 createTimer(5)
