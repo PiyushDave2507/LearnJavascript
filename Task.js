@@ -1,18 +1,21 @@
-const arr = [0,-1,2,-3,1];
-const target = -2;
+const arr3 = [1, 2, 3, 6, 3, 6, 1];
+const arr4 = [1,2,3,4,3]
+function findDuplicates(arr) {
+    const arr1 = {};
+    const arr2 = [];
 
 
-function equalsum(arr, target){
-    // we can use arrow funnction also  
-    //  const equalsum = (arr, target)=>{}
-    for (let i = 0; i < arr.length; i++){
-        for(let j = i + 1; j < arr.length; j++){
-            if (arr[i] + arr[j] === target){
-             return true;
-            }
-        }
-    }
-    return false;
+    for (const num of arr) {
+      
+     if(arr1[num] == 1){
+        arr2.push(num);
+        arr1[num]++;
+     }else{
+        arr1[num]=1;
+     }
 }
-console.log(equalsum(arr, target));
+return arr2;
+}
 
+console.log(findDuplicates(arr3));
+console.log(findDuplicates(arr4));
