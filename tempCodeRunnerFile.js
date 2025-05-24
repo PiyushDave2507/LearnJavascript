@@ -1,0 +1,1 @@
+console.log(equalsum(arr, target));
