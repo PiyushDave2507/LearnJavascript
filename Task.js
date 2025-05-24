@@ -5,8 +5,8 @@ const findDuplicates= (arr)=> {
     const arr2 = [];
 
 
-    for (const num of arr) {
-      
+    for (let i =0; i<arr.length; i++) {
+     const num = arr[i]
      if(arr1[num] == 1){
         arr2.push(num);
         
