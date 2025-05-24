@@ -1,6 +1,6 @@
 const arr3 = [1, 2, 3, 6, 3, 6, 1];
 const arr4 = [1,2,3,4,3]
-function findDuplicates(arr) {
+const findDuplicates= (arr)=> {
     const arr1 = {};
     const arr2 = [];
 
