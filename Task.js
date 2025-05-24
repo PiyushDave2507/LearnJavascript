@@ -14,7 +14,7 @@ const findDuplicates= (arr)=> {
      arr1[num] = (arr1[num]|| 0) + 1;
 }
 // to make right order of output use sort function sorts the duplicate value based on the order they first appeared in the original array
- return arr2.sort((a, b) => arr.indexOf(a) - arr.indexOf(b));
+ return arr2.sort();
 }
 
 console.log(findDuplicates(arr3));
