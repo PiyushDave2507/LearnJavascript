@@ -9,10 +9,9 @@ function findDuplicates(arr) {
       
      if(arr1[num] == 1){
         arr2.push(num);
-        arr1[num]++;
-     }else{
-        arr1[num]=1;
+        
      }
+     arr1[num] = (arr1[num]|| 0) + 1;
 }
 return arr2;
 }
