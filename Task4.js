@@ -5,10 +5,11 @@ function createTimer(seconds) {
             setTimeout(() => {
             console.log(`time ${i} second`);
             result.push(i);
-          if (i == seconds-1){
-            console.log(`result is [${result.join(",")}]`);
-            
-          }  
+            setTimeout(()=>{
+             if (i == seconds-1){
+             console.log(`result is [${result.join(",")}]`);
+             }
+          },1000)  
     }, i*1000);
     
 }
