@@ -13,7 +13,7 @@ const findDuplicates= (arr)=> {
      }
      arr1[num] = (arr1[num]|| 0) + 1;
 }
-return arr2;
+ return arr2.sort((a, b) => arr.indexOf(a) - arr.indexOf(b));
 }
 
 console.log(findDuplicates(arr3));
